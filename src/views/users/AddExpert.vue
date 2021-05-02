@@ -21,44 +21,19 @@
             </div>
             <div class="form-group">
               <select id="sltType" class="form-control form-control-lg" v-model="type" required>
-                <option value>-- SELECIONA GRUPO --</option>
-                <option value="admin">XXXXXX</option>
-                <option value="user">YYYYYYYY</option>
+                <option value>-- SELECIONA CATEGORIA --</option>
+                <option value="admin">VETERINARIO</option>
+                <option value="user">VENDEDOR</option>
               </select>
             </div>
             <div class="form-group">
             <input
-              v-model="birth_date"
+              v-model="nivel"
               type="text"
-              onmouseenter="(this.type='date')"
-              onmouseleave="(this.type='text')"
-              class="form-control form-control-lg"
-              id="txtBirthDate"
-              placeholder="escreve data de nascimento"
+              id="txtnivel"
+              placeholder="escreve nível"
               required
             />
-            </div>
-            <div class="form-group">
-              <input
-                v-model="location.city"
-                type="text"
-                class="form-control form-control-lg"
-                id="txtCity"
-                placeholder="escreve cidade"
-                
-              />
-            </div>
-            <div class="form-group">
-              <input
-                v-model="location.country"
-                type="text"
-                class="form-control form-control-lg"
-                id="txtCountry"
-                placeholder="escreve país"
-                
-              />
-            </div>
-           
             
             <button type="submit" class="btn btn-outline-success btn-lg mr-2">
               <i class="fas fa-plus-square"></i> ADICIONAR

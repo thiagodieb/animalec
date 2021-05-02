@@ -33,16 +33,16 @@
                   <i class="fas fa-arrow-up" v-if="sortType===1" @click="sort()"></i>
                   <i class="fas fa-arrow-down" v-else  @click="sort()"></i>
                 </th>
-                <th scope="col">ANIMAL</th>
-                <th scope="col">DATA DE CRIAÇÃO</th>
+                <th scope="col">DESCRIÇÃO</th>
+                <th scope="col">VALOR</th>
                 <th scope="col">AÇÕES</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="user of users" :key="user._id">                
                 <td class="pt-4">{{user.name}}</td>
-                <td class="pt-4">{{user.type==="admin"?"Administrador":"Utilizador normal"}}</td>
-                <td class="pt-4">{{formatDate(user.registration_date)}}</td>
+                <td class="pt-4">{{user.description}}</td>
+                <td class="pt-4">{{user.price}}</td>
                 <td>
                   <router-link
                     :to="{name:'editUser', params:{userId: user._id}}"

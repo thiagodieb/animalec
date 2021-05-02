@@ -61,22 +61,22 @@ const routes = [
   },
   // novos
   {
-    path: "/admin/users",
+    path: "/admin/experts",
     name: "listExperts",
     component: () => import("@/views/users/ListExperts.vue")
   },
   {
-    path: "/admin/users",
+    path: "/admin/sponsors",
     name: "listSponsors",
     component: () => import("@/views/users/ListSponsors.vue")
   },
   {
-    path: "/admin/users/add",
+    path: "/admin/experts/add",
     name: "addExpert",
     component: () => import("@/views/users/AddExpert.vue")
   },
   {
-  path: "/admin/users/add",
+  path: "/admin/sponsors/add",
   name: "addSponsor",
   component: () => import("@/views/users/AddSponsor.vue")
 },
